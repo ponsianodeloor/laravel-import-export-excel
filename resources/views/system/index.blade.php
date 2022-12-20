@@ -8,6 +8,9 @@
 
 @section('content')
     <p>Welcome to this beautiful admin panel.</p>
+    <div>
+        Descargar usuarios en el siguiente enlace <a href="{{route('users.exports.excel')}}" target="_blank">Descargar usuarios</a>
+    </div>
 @stop
 
 @section('css')
