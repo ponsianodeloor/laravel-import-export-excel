@@ -22,3 +22,6 @@ Homestead.json
 /.vagrant
 .phpunit.result.cache
 .idea/vcs.xml
+.idea/php.xml
+.idea/laravel-import-export-excel.iml
+.idea/php.xml
