@@ -19,6 +19,9 @@ Route::middleware([
 
     Route::controller(UserController::class)->group(function (){
         Route::get('users/exports/excel', 'exportExcel')->name('users.exports.excel');
+        Route::get('users/imports/excel', 'createExcel')->name('users.imports.excel.create');
+
+        Route::post('users/imports/excel', 'importExcel')->name('users.imports.excel.store');
     });
 
     Route::get('/dashboard', function () {
