@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\DPAController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -22,6 +23,12 @@ Route::middleware([
         Route::get('users/imports/excel', 'createExcel')->name('users.imports.excel.create');
 
         Route::post('users/imports/excel', 'importExcel')->name('users.imports.excel.store');
+    });
+
+    Route::controller(DPAController::class)->group(function(){
+        Route::get('dpa/imports/excel', 'createExcel')->name('dpa.imports.excel.create');
+
+        Route::post('dpa/imports/excel', 'importExcel')->name('dpa.imports.excel.store');
     });
 
     Route::get('/dashboard', function () {

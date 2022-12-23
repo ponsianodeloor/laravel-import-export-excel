@@ -330,32 +330,42 @@ return [
             'icon' => 'fas fa-fw fa-lock',
         ],
         [
-            'text'    => 'multilevel',
+            'text'    => 'INEC',
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
                 [
-                    'text' => 'level_one',
+                    'text' => 'Catalogo Paises',
                     'url'  => '#',
                 ],
                 [
-                    'text'    => 'level_one',
+                    'text' => 'DPA',
+                    'route'  => 'dpa.imports.excel.create',
+                ],
+                [
+                    'text'    => 'Provincias',
                     'url'     => '#',
                     'submenu' => [
                         [
-                            'text' => 'level_two',
+                            'text' => 'Catalogo de Provincias',
                             'url'  => '#',
                         ],
                         [
-                            'text'    => 'level_two',
+                            'text'    => 'Cantones',
                             'url'     => '#',
                             'submenu' => [
                                 [
-                                    'text' => 'level_three',
+                                    'text' => 'Catalogo de Cantones',
                                     'url'  => '#',
                                 ],
                                 [
-                                    'text' => 'level_three',
+                                    'text' => 'Parroquias',
                                     'url'  => '#',
+                                    'submenu' => [
+                                        [
+                                            'text' => 'Catalogo de Parroquias',
+                                            'url'  => '#',
+                                        ],
+                                    ]
                                 ],
                             ],
                         ],
